@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 	WAV_HEADER wavHeader;
 	WAV_DATA wavData;
 	int i;
-	int n=128;
+	int n=100;
 	double w1,w2,s1[n],s2[n],f[n],fi[n],FR[n],FI[n];//,F[100];
 	double *F = (double*) malloc(sizeof(double)*n);
 	
@@ -22,11 +22,11 @@ int main(int argc, char const *argv[])
 	double* buffer_I = (double*) malloc(sizeof(double)*buffer_size);
 	memset(buffer_I,0,buffer_size);
 	//compute_dft(buffer,Fbuffer,buffer_size);
-	FFT(buffer_size,0,buffer,buffer_I,Fbuffer,Fbuffer_I);
+	//FFT(buffer_size,0,buffer,buffer_I,Fbuffer,Fbuffer_I);
 
-	for(i=0;i<buffer_size;i++){
-		printf("[%d]=%lf\n",i,sqrt(Fbuffer[i]*Fbuffer[i]+Fbuffer_I[i]*Fbuffer_I[i]));
-	}	
+	//for(i=0;i<buffer_size;i++){
+	//	printf("[%d]=%lf\n",i,sqrt(Fbuffer[i]*Fbuffer[i]+Fbuffer_I[i]*Fbuffer_I[i]));
+	//}	
 
 
 	for(i=0;i<n;i++){

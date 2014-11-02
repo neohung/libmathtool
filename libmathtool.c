@@ -28,7 +28,7 @@ void compute_dft(double inreal[], double out[], int n) {
 	}
 }
 
-//以2為基底的數則返回1
+//檢查是否為以2為基底的數
 int IsPowerOfTwo(int number) 
 { 
 	if( number < 2 ) return 0; 
@@ -52,6 +52,9 @@ int NumberOfBitsNeeded(int nSamples)
     return 0; 
 } 
 
+//把Bit反轉
+//例如ReverseBits(1, 3)即把001b 變成100b = 4
+//例如ReverseBits(3, 3)即把011b 變成110b = 6
 int ReverseBits(int nIndex, int nBits) 
 { 
 	int i, rev; 
@@ -153,5 +156,14 @@ void FFT(int nSamples, int bInverseTransform, double pRealIn[], double pImagIn[]
 
 void cal_fft()
 {
-	printf("%d\n",NumberOfBitsNeeded(4));
+	printf("%d\n",ReverseBits(0, 3));
+	printf("%d\n",ReverseBits(1, 3));
+	printf("%d\n",ReverseBits(2, 3));
+	printf("%d\n",ReverseBits(3, 3));
+	printf("%d\n",ReverseBits(4, 3));
+	printf("%d\n",ReverseBits(5, 3));
+	printf("%d\n",ReverseBits(6, 3));
+	printf("%d\n",ReverseBits(7, 3));
+	printf("%d\n",ReverseBits(8, 3));
+
 }

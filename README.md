@@ -24,8 +24,8 @@ const double PI=2.0 * acos(0);
 for(i=0;i<n;i++){
 	w1 = PI / 5;
 	w2 = PI / 10;
-	s1[i]=cos(w1*i);
-	s2[i]=cos(w2*i);
+	s1[i] = cos(w1*i);
+	s2[i] = cos(w2*i);
 	fr[i] = s1[i]+s2[i];
 	fi[i] = 0;
 }
