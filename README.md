@@ -32,6 +32,9 @@ for(i=0;i<n;i++){
 FFT(n,0,fr,fi,FR,FI);
 ```
 ## Change Log
+###2014-11-03
+* 修改FFT
+
 ###2014-11-02
 * 加上FFT
 
